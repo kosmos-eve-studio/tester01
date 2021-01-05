@@ -1,0 +1,711 @@
+<html>
+<head><meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<style type="text/css">
+<!--
+span.cls_002{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:14.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_003{font-family:"Palatino Linotype",serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:"Palatino Linotype",serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:18.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_005{font-family:"Palatino Linotype Italic",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_005{font-family:"Palatino Linotype Italic",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_006{font-family:"Palatino Linotype",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:"Palatino Linotype",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_008{font-family:"Palatino Linotype Italic",serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+div.cls_008{font-family:"Palatino Linotype Italic",serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:italic;text-decoration: none}
+span.cls_009{font-family:"Palatino Linotype",serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:"Palatino Linotype",serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_012{font-family:"Palatino Linotype",serif;font-size:5.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:"Palatino Linotype",serif;font-size:5.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:"Palatino Linotype Bold",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_013{font-family:"Palatino Linotype Bold",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_014{font-family:Arial,serif;font-size:10.9px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_014{font-family:Arial,serif;font-size:10.9px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_015{font-family:Arial,serif;font-size:9.8px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_015{font-family:Arial,serif;font-size:9.8px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_016{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_016{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_017{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_017{font-family:Arial,serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_018{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_018{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_019{font-family:"Palatino Linotype",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_019{font-family:"Palatino Linotype",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_020{font-family:"Palatino Linotype",serif;font-size:5.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_020{font-family:"Palatino Linotype",serif;font-size:5.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_021{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_021{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_022{font-family:"Palatino Linotype Bold",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_022{font-family:"Palatino Linotype Bold",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_023{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_023{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_024{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_024{font-family:Arial,serif;font-size:9.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_025{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_025{font-family:Arial,serif;font-size:7.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_026{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_026{font-family:Arial,serif;font-size:8.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_027{font-family:Arial,serif;font-size:10.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_027{font-family:Arial,serif;font-size:10.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_028{font-family:Arial,serif;font-size:10.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_028{font-family:Arial,serif;font-size:10.0px;color:rgb(43,42,41);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_029{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_029{font-family:Arial,serif;font-size:11.1px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+span.cls_030{font-family:"Palatino Linotype",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_030{font-family:"Palatino Linotype",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_031{font-family:"Palatino Linotype Bold",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+div.cls_031{font-family:"Palatino Linotype Bold",serif;font-size:10.0px;color:rgb(0,0,0);font-weight:bold;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background01.jpg" width=612 height=792></div>
+<div style="position:absolute;left:145.12px;top:41.16px" class="cls_002"><span class="cls_002">Harvard Business School</span></div>
+<div style="position:absolute;left:475.38px;top:41.16px" class="cls_002"><span class="cls_002">9-595-057</span></div>
+<div style="position:absolute;left:467.68px;top:58.08px" class="cls_003"><span class="cls_003">Rev. March 30, 2001</span></div>
+<div style="position:absolute;left:159.04px;top:158.38px" class="cls_004"><span class="cls_004">The Black & Decker Corporation (A):</span></div>
+<div style="position:absolute;left:223.84px;top:180.34px" class="cls_004"><span class="cls_004">Power Tools Division</span></div>
+<div style="position:absolute;left:162.04px;top:225.76px" class="cls_005"><span class="cls_005">Joe, I like you guys.  But, look, I give Makita 10 feet of space.  I give you 10 feet of</span></div>
+<div style="position:absolute;left:126.04px;top:237.76px" class="cls_005"><span class="cls_005">space.  They outsell you 8 to 1.  What are we going to do about that?</span></div>
+<div style="position:absolute;left:126.04px;top:261.70px" class="cls_006"><span class="cls_006">In January 1991, statements like this no longer surprise Joseph Galli.  Black & Decker’s (B&D)</span></div>
+<div style="position:absolute;left:90.04px;top:273.70px" class="cls_006"><span class="cls_006">vice president of sales and marketing for power tools had heard similar sentiments expressed by</span></div>
+<div style="position:absolute;left:90.04px;top:285.70px" class="cls_006"><span class="cls_006">many trade accounts.  Makita Electric of Japan had practically taken over the professional power tools</span></div>
+<div style="position:absolute;left:90.04px;top:297.70px" class="cls_006"><span class="cls_006">for tradesmen business since it entered the United States market a decade ago.  “Tradesmen” was one</span></div>
+<div style="position:absolute;left:90.04px;top:309.70px" class="cls_006"><span class="cls_006">of  the  three  major  segments  of  the  power  tools  business—the  others  being</span></div>
+<div style="position:absolute;left:460.94px;top:309.70px" class="cls_006"><span class="cls_006">“Consumer”  and</span></div>
+<div style="position:absolute;left:90.04px;top:321.70px" class="cls_006"><span class="cls_006">“Industrial.”</span></div>
+<div style="position:absolute;left:155.16px;top:321.70px" class="cls_006"><span class="cls_006">“Consumer” represented “at home” use, while both “Tradesmen” and “Industrial”</span></div>
+<div style="position:absolute;left:90.04px;top:333.70px" class="cls_006"><span class="cls_006">covered professional users.  The distinguishing characteristic of the Tradesmen segment was that</span></div>
+<div style="position:absolute;left:90.04px;top:345.70px" class="cls_006"><span class="cls_006">these buyers, such as a carpenter, bought tools for their own use on a job site.  In Industrial, the buyer</span></div>
+<div style="position:absolute;left:90.04px;top:357.70px" class="cls_006"><span class="cls_006">was generally a corporation purchasing tools for use by employees.  By late 1990, Makita’s success in</span></div>
+<div style="position:absolute;left:90.04px;top:369.70px" class="cls_006"><span class="cls_006">the Professional-Tradesmen segment was such that it held an 80% share in cordless drills, the single</span></div>
+<div style="position:absolute;left:90.04px;top:381.69px" class="cls_006"><span class="cls_006">largest product category, and a 50% segment share overall.  B&D had virtually created the portable</span></div>
+<div style="position:absolute;left:90.04px;top:393.69px" class="cls_006"><span class="cls_006">power tools business in the United States beginning in the early 1900s.  While it maintained the #1</span></div>
+<div style="position:absolute;left:90.04px;top:405.69px" class="cls_006"><span class="cls_006">market share  position  in  the  Consumer  and  Professional-Industrial  segments,  its  entry  in  the</span></div>
+<div style="position:absolute;left:90.04px;top:417.69px" class="cls_006"><span class="cls_006">relatively new Professional-Tradesmen segment held only about a 9% share.</span></div>
+<div style="position:absolute;left:126.04px;top:441.69px" class="cls_006"><span class="cls_006">The trade was asking for advertising allowances and rebate money on B&D’s Tradesmen</span></div>
+<div style="position:absolute;left:90.04px;top:453.69px" class="cls_006"><span class="cls_006">products and profitability in this segment was near zero.  B&D’s senior management resolved to put</span></div>
+<div style="position:absolute;left:90.04px;top:465.69px" class="cls_006"><span class="cls_006">an end to this “no win” game, and Galli set about developing and gaining corporate support for a</span></div>
+<div style="position:absolute;left:90.04px;top:477.69px" class="cls_006"><span class="cls_006">viable program to challenge Makita for leadership in this segment.  He could not help but see the</span></div>
+<div style="position:absolute;left:90.04px;top:489.69px" class="cls_006"><span class="cls_006">irony of a 9% Tradesmen segment share and no profitability against the results of two recent research</span></div>
+<div style="position:absolute;left:90.04px;top:501.69px" class="cls_006"><span class="cls_006">studies:  one showing B&D to be among the powerful brand names in the world, and the second</span></div>
+<div style="position:absolute;left:90.04px;top:513.69px" class="cls_006"><span class="cls_006">establishing B&D’s professional tools to be the highest quality in the industry.</span></div>
+<div style="position:absolute;left:90.04px;top:542.02px" class="cls_007"><span class="cls_007">Black & Decker</span></div>
+<div style="position:absolute;left:126.04px;top:570.70px" class="cls_006"><span class="cls_006">In 1910, Duncan Black and Alonzo Decker, Sr., started a machine shop and, in 1917, received</span></div>
+<div style="position:absolute;left:90.04px;top:582.70px" class="cls_006"><span class="cls_006">a patent on the world’s first portable power drill with pistol grip and trigger switch; 73 years after</span></div>
+<div style="position:absolute;left:90.04px;top:594.70px" class="cls_006"><span class="cls_006">receiving  its  first  patent,  B&D  was  the  world’s  largest  producer  of  power  tools,  power  tool</span></div>
+<div style="position:absolute;left:90.04px;top:606.70px" class="cls_006"><span class="cls_006">accessories, electric lawn and garden tools, and residential security hardware.  Headquartered in</span></div>
+<div style="position:absolute;left:90.04px;top:633.84px" class="cls_008"><span class="cls_008">Professor Robert J. Dolan prepared this case as the basis for class discussion rather than to illustrate either effective or</span></div>
+<div style="position:absolute;left:90.04px;top:644.88px" class="cls_008"><span class="cls_008">ineffective handling of an administrative situation. Certain non-public data have been disguised.</span></div>
+<div style="position:absolute;left:90.04px;top:661.85px" class="cls_009"><span class="cls_009">Copyright © 1995 by the President and Fellows of Harvard College.  To order copies or request permission to</span></div>
+<div style="position:absolute;left:90.04px;top:672.89px" class="cls_009"><span class="cls_009">reproduce materials, call 1-800-545-7685, write Harvard Business School Publishing, Boston, MA 02163, or go to</span></div>
+<div style="position:absolute;left:90.04px;top:683.93px" class="cls_009"><span class="cls_009"> </span><A HREF="http://www.hbsp.harvard.edu./">http://www.hbsp.harvard.edu.</A>  No part of this publication may be reproduced, stored in a retrieval system,</div>
+<div style="position:absolute;left:90.04px;top:694.97px" class="cls_009"><span class="cls_009">used in a spreadsheet, or transmitted in any form or by any means—electronic, mechanical, photocopying,</span></div>
+<div style="position:absolute;left:90.04px;top:706.01px" class="cls_009"><span class="cls_009">recording, or otherwise—without the permission of Harvard Business School.</span></div>
+<div style="position:absolute;left:534.52px;top:737.78px" class="cls_010"><span class="cls_010">1</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:802px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background02.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.04px;top:36.20px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:299.26px;top:36.20px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:72.04px;top:69.34px" class="cls_006"><span class="cls_006">Towson, Maryland, B&D’s sales reached $4.8 billion in 1990, with nearly 50% of product revenues</span></div>
+<div style="position:absolute;left:72.04px;top:81.34px" class="cls_006"><span class="cls_006">from outside the United States.  Alonzo G. Decker, Jr., was honorary chairman of the company and a</span></div>
+<div style="position:absolute;left:72.04px;top:93.34px" class="cls_006"><span class="cls_006">member of the board of directors.  He had been chairman of the board and chief executive officer</span></div>
+<div style="position:absolute;left:72.04px;top:105.34px" class="cls_006"><span class="cls_006">from 1968 to 1975.  Prior to his becoming CEO, the CEO post had always been held by his father or</span></div>
+<div style="position:absolute;left:72.04px;top:117.34px" class="cls_006"><span class="cls_006">co-founder Black.  From its roots in power tools, B&D began a move “from the garage to the house”</span></div>
+<div style="position:absolute;left:72.04px;top:129.22px" class="cls_006"><span class="cls_006">in 1979 with the introduction of the very successful Dustbuster</span><span class="cls_012"><sup>®</sup></span><span class="cls_006"> hand-held vacuum.  This “into the</span></div>
+<div style="position:absolute;left:72.04px;top:141.34px" class="cls_006"><span class="cls_006">house” thrust led to the purchase of General Electric’s Housewares Division in 1984 for $212 million.</span></div>
+<div style="position:absolute;left:72.04px;top:153.34px" class="cls_006"><span class="cls_006">As part of the sale agreement, B&D could use General Electric’s name on products only until 1987.</span></div>
+<div style="position:absolute;left:108.04px;top:177.34px" class="cls_006"><span class="cls_006">Nolan Archibald, a Harvard Business School graduate and a former group president at</span></div>
+<div style="position:absolute;left:72.04px;top:189.34px" class="cls_006"><span class="cls_006">Beatrice, became president and CEO in 1986.  The early 1980s had been volatile years at B&D.  It</span></div>
+<div style="position:absolute;left:72.04px;top:201.34px" class="cls_006"><span class="cls_006">began the decade with a 19% net revenue increase to $1.2 billion in 1980, but sales stagnated at this</span></div>
+<div style="position:absolute;left:72.04px;top:213.34px" class="cls_006"><span class="cls_006">level through 1983.  In 1985, with net revenues at $1.7 billion, B&D posted a</span></div>
+<div style="position:absolute;left:456.96px;top:213.34px" class="cls_006"><span class="cls_006">$215.1 million</span></div>
+<div style="position:absolute;left:72.04px;top:225.34px" class="cls_006"><span class="cls_006">restructuring cost and a $158.4 million loss.  For the 5-year period from 1981 through 1985, the</span></div>
+<div style="position:absolute;left:72.04px;top:237.34px" class="cls_006"><span class="cls_006">company lost money.  B&D’s $2.8 billion acquisition of Emhart Corporation in 1989 more than</span></div>
+<div style="position:absolute;left:72.04px;top:249.22px" class="cls_006"><span class="cls_006">doubled B&D’s revenues and brought new strong brands, including Kwikset</span><span class="cls_012"><sup>®</sup></span><span class="cls_006"> locks and Price Pfister</span><span class="cls_012"><sup>®</sup></span></div>
+<div style="position:absolute;left:72.04px;top:261.34px" class="cls_006"><span class="cls_006">faucets, but raised the company’s long-term debt to $4.2 billion, representing about 84% of</span></div>
+<div style="position:absolute;left:502.25px;top:261.34px" class="cls_006"><span class="cls_006">total</span></div>
+<div style="position:absolute;left:72.04px;top:273.46px" class="cls_006"><span class="cls_006">capital.  </span><span class="cls_013">Figure A</span><span class="cls_006"> shows the growth in B&D sales and net income since Archibald became CEO.</span></div>
+<div style="position:absolute;left:72.04px;top:303.58px" class="cls_013"><span class="cls_013">Figure A</span><span class="cls_006">   Black & Decker Revenues and Operating Income, 1986-1990</span></div>
+<div style="position:absolute;left:91.46px;top:332.13px" class="cls_014"><span class="cls_014">$ in Billions</span></div>
+<div style="position:absolute;left:299.74px;top:332.13px" class="cls_014"><span class="cls_014">$ in Millions</span></div>
+<div style="position:absolute;left:101.89px;top:349.10px" class="cls_015"><span class="cls_015">6</span></div>
+<div style="position:absolute;left:306.04px;top:349.89px" class="cls_015"><span class="cls_015">550</span></div>
+<div style="position:absolute;left:93.74px;top:365.31px" class="cls_015"><span class="cls_015">5.5</span></div>
+<div style="position:absolute;left:306.04px;top:365.54px" class="cls_015"><span class="cls_015">500</span></div>
+<div style="position:absolute;left:101.89px;top:382.77px" class="cls_015"><span class="cls_015">5</span></div>
+<div style="position:absolute;left:306.04px;top:381.20px" class="cls_015"><span class="cls_015">450</span></div>
+<div style="position:absolute;left:93.74px;top:399.21px" class="cls_015"><span class="cls_015">4.5</span></div>
+<div style="position:absolute;left:306.04px;top:396.86px" class="cls_015"><span class="cls_015">400</span></div>
+<div style="position:absolute;left:306.04px;top:412.51px" class="cls_015"><span class="cls_015">350</span></div>
+<div style="position:absolute;left:101.89px;top:416.43px" class="cls_015"><span class="cls_015">4</span></div>
+<div style="position:absolute;left:306.04px;top:428.17px" class="cls_015"><span class="cls_015">300</span></div>
+<div style="position:absolute;left:93.74px;top:434.43px" class="cls_015"><span class="cls_015">3.5</span></div>
+<div style="position:absolute;left:306.04px;top:443.83px" class="cls_015"><span class="cls_015">250</span></div>
+<div style="position:absolute;left:101.89px;top:451.66px" class="cls_015"><span class="cls_015">3</span></div>
+<div style="position:absolute;left:306.04px;top:459.48px" class="cls_015"><span class="cls_015">200</span></div>
+<div style="position:absolute;left:93.74px;top:468.88px" class="cls_015"><span class="cls_015">2.5</span></div>
+<div style="position:absolute;left:306.04px;top:475.14px" class="cls_015"><span class="cls_015">150</span></div>
+<div style="position:absolute;left:101.89px;top:486.10px" class="cls_015"><span class="cls_015">2</span></div>
+<div style="position:absolute;left:306.04px;top:490.80px" class="cls_015"><span class="cls_015">100</span></div>
+<div style="position:absolute;left:93.74px;top:503.32px" class="cls_015"><span class="cls_015">1.5</span></div>
+<div style="position:absolute;left:311.47px;top:506.45px" class="cls_015"><span class="cls_015">50</span></div>
+<div style="position:absolute;left:101.89px;top:520.56px" class="cls_015"><span class="cls_015">1</span></div>
+<div style="position:absolute;left:316.91px;top:522.11px" class="cls_015"><span class="cls_015">1</span></div>
+<div style="position:absolute;left:121.18px;top:532.32px" class="cls_014"><span class="cls_014">1986</span></div>
+<div style="position:absolute;left:156.36px;top:532.32px" class="cls_014"><span class="cls_014">1987</span></div>
+<div style="position:absolute;left:191.55px;top:532.32px" class="cls_014"><span class="cls_014">1988</span></div>
+<div style="position:absolute;left:226.73px;top:532.32px" class="cls_014"><span class="cls_014">1989</span></div>
+<div style="position:absolute;left:264.29px;top:532.32px" class="cls_014"><span class="cls_014">1990</span></div>
+<div style="position:absolute;left:331.82px;top:532.93px" class="cls_014"><span class="cls_014">1986</span></div>
+<div style="position:absolute;left:368.23px;top:532.32px" class="cls_014"><span class="cls_014">1987</span></div>
+<div style="position:absolute;left:403.42px;top:532.93px" class="cls_014"><span class="cls_014">1988</span></div>
+<div style="position:absolute;left:438.60px;top:532.93px" class="cls_014"><span class="cls_014">1989</span></div>
+<div style="position:absolute;left:474.16px;top:531.77px" class="cls_014"><span class="cls_014">1990</span></div>
+<div style="position:absolute;left:108.04px;top:566.86px" class="cls_006"><span class="cls_006">The five largest product groups and their percentage of B&D’s 1990 sales were:</span></div>
+<div style="position:absolute;left:160.12px;top:598.30px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> </span><span class="cls_006">   Power Tools and Accessories</span></div>
+<div style="position:absolute;left:376.12px;top:597.58px" class="cls_006"><span class="cls_006">29%</span></div>
+<div style="position:absolute;left:160.12px;top:623.02px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> </span><span class="cls_006">   Household Products</span></div>
+<div style="position:absolute;left:376.12px;top:622.30px" class="cls_006"><span class="cls_006">15%</span></div>
+<div style="position:absolute;left:160.12px;top:647.74px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> </span><span class="cls_006">   Information Systems and Services</span></div>
+<div style="position:absolute;left:376.12px;top:647.02px" class="cls_006"><span class="cls_006">11%</span></div>
+<div style="position:absolute;left:160.12px;top:672.46px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> </span><span class="cls_006">   Outdoor Products</span></div>
+<div style="position:absolute;left:376.12px;top:671.74px" class="cls_006"><span class="cls_006">9%</span></div>
+<div style="position:absolute;left:160.12px;top:697.18px" class="cls_016"><span class="cls_016">•</span><span class="cls_017"> </span><span class="cls_006">   Security Hardware</span></div>
+<div style="position:absolute;left:376.12px;top:696.46px" class="cls_006"><span class="cls_006">9%</span></div>
+<div style="position:absolute;left:72.04px;top:739.01px" class="cls_018"><span class="cls_018">2</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:1604px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background03.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.00px;top:36.24px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:510.74px;top:36.24px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:126.00px;top:69.36px" class="cls_019"><span class="cls_019">Household  products  included  hand-held  vacuums,  irons,  mixers,  food  processors  and</span></div>
+<div style="position:absolute;left:90.00px;top:81.37px" class="cls_019"><span class="cls_019">choppers,  coffee  makers,  and  toasters  and  toaster  ovens.    The  well-known  Dustbuster  and</span></div>
+<div style="position:absolute;left:90.00px;top:93.24px" class="cls_019"><span class="cls_019">Spacemaker</span><span class="cls_020"><sup>®</sup></span><span class="cls_019"> (under-the-cabinet appliances) brands were part of this group.  The B&D franchise was</span></div>
+<div style="position:absolute;left:90.00px;top:105.37px" class="cls_019"><span class="cls_019">especially strong in cordless vacuums, irons, and toaster ovens, each holding over a 50% market share</span></div>
+<div style="position:absolute;left:90.00px;top:117.24px" class="cls_019"><span class="cls_019">in the United States.  In 1990, 29 new household products were introduced, including the Power Pro</span><span class="cls_020"><sup>™</sup></span></div>
+<div style="position:absolute;left:90.00px;top:129.24px" class="cls_019"><span class="cls_019">Dustbuster</span><span class="cls_020"><sup>®</sup></span><span class="cls_019"> heavy duty cordless vacuum.  The household products line was heavily supported with</span></div>
+<div style="position:absolute;left:90.00px;top:141.37px" class="cls_019"><span class="cls_019">media advertising.</span></div>
+<div style="position:absolute;left:126.00px;top:165.61px" class="cls_019"><span class="cls_019">The B&D name enjoyed substantial equity in both the United States and Europe.  An</span></div>
+<div style="position:absolute;left:90.00px;top:177.37px" class="cls_019"><span class="cls_019">independent survey of 6,000 brands showed Black & Decker’s brand-strength ranking to be #7 in the</span></div>
+<div style="position:absolute;left:90.00px;top:188.04px" class="cls_019"><span class="cls_019">United States and #19 in Europe.</span><span class="cls_003"><sup>1</sup></span><span class="cls_019">  This put Black & Decker in the company of Coca-Cola, Campbell’s,</span></div>
+<div style="position:absolute;left:89.99px;top:200.89px" class="cls_019"><span class="cls_019">Walt  Disney,  Pepsi-Cola,  Kodak,  NBC,  Kellogg’s,  McDonald’s,  and  Hershey—the  other  firms</span></div>
+<div style="position:absolute;left:89.99px;top:212.65px" class="cls_019"><span class="cls_019">rounding out the U.S. top ten.</span></div>
+<div style="position:absolute;left:90.00px;top:240.36px" class="cls_021"><span class="cls_021">Power Tools Market</span></div>
+<div style="position:absolute;left:126.00px;top:269.17px" class="cls_019"><span class="cls_019">In 1990, portable power tools in the United States was a $1.5 billion market.  Products ranged</span></div>
+<div style="position:absolute;left:90.00px;top:281.17px" class="cls_019"><span class="cls_019">from an electric screwdriver for the consumer who might use it once a year at home to heavy-duty</span></div>
+<div style="position:absolute;left:90.00px;top:293.17px" class="cls_019"><span class="cls_019">miter saws used continually throughout the day at construction sites.  Segmentation of the market</span></div>
+<div style="position:absolute;left:90.00px;top:305.29px" class="cls_019"><span class="cls_019">was as shown in </span><span class="cls_022">Figure B</span><span class="cls_019">.</span></div>
+<div style="position:absolute;left:90.00px;top:335.41px" class="cls_022"><span class="cls_022">Figure B</span><span class="cls_019">   Segmentation of the U.S. Power Tools Market</span></div>
+<div style="position:absolute;left:126.00px;top:627.36px" class="cls_019"><span class="cls_019">Nonprofessional users accounted for $530 million or 35% of the market.  In this Consumer</span></div>
+<div style="position:absolute;left:90.00px;top:639.37px" class="cls_019"><span class="cls_019">segment, consumers bought tools at mass merchants, such as Wal-Mart and Kmart, and hardware</span></div>
+<div style="position:absolute;left:90.00px;top:651.37px" class="cls_019"><span class="cls_019">stores for their own home use.  The “for work” market was divided into a Professional-Industrial</span></div>
+<div style="position:absolute;left:90.00px;top:663.37px" class="cls_019"><span class="cls_019">segment and a Professional-Tradesmen segment.  The $550 million Professional-Industrial segment</span></div>
+<div style="position:absolute;left:90.00px;top:675.37px" class="cls_019"><span class="cls_019">was made up primarily of commercial contractors working on large projects (e.g., office buildings,</span></div>
+<div style="position:absolute;left:90.00px;top:719.04px" class="cls_003"><span class="cls_003"><sup>1</sup></span><span class="cls_009">Landor Associates Survey.</span></div>
+<div style="position:absolute;left:534.96px;top:738.96px" class="cls_018"><span class="cls_018">3</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:2406px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background04.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.04px;top:36.20px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:299.26px;top:36.20px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:72.04px;top:69.34px" class="cls_006"><span class="cls_006">bridges, etc.) and company assembly lines (e.g., automobile plants).  In this segment, distributors (of</span></div>
+<div style="position:absolute;left:72.04px;top:81.34px" class="cls_006"><span class="cls_006">which W.W. Grainger of Skokie, Illinois, with over 300 branch offices, was by far the largest) played</span></div>
+<div style="position:absolute;left:72.04px;top:93.34px" class="cls_006"><span class="cls_006">an important role in providing technical expertise and service.  For a given job, the distributor could</span></div>
+<div style="position:absolute;left:72.04px;top:105.34px" class="cls_006"><span class="cls_006">both specify the contractor’s tool requirements and recommend specific brands.  Grainger stocked</span></div>
+<div style="position:absolute;left:72.04px;top:117.34px" class="cls_006"><span class="cls_006">more than 32,000 items to provide prompt delivery.  In the Professional-Industrial segment, tools</span></div>
+<div style="position:absolute;left:72.04px;top:129.34px" class="cls_006"><span class="cls_006">were typically purchased and owned by the company rather than the individual users.</span></div>
+<div style="position:absolute;left:108.04px;top:153.34px" class="cls_006"><span class="cls_006">The Professional-Tradesmen segment was targeted largely at tradesmen such as electricians,</span></div>
+<div style="position:absolute;left:72.04px;top:165.34px" class="cls_006"><span class="cls_006">plumbers, carpenters, framers, roofers, and general remodelers working in residential construction.</span></div>
+<div style="position:absolute;left:72.04px;top:177.34px" class="cls_006"><span class="cls_006">These tradespeople were expected to show up at the job site with their own necessary tools of the</span></div>
+<div style="position:absolute;left:72.04px;top:189.34px" class="cls_006"><span class="cls_006">trade in working condition.  These buyers tended to patronize newly emerging retail distribution</span></div>
+<div style="position:absolute;left:72.04px;top:201.33px" class="cls_006"><span class="cls_006">channels including home centers such as The Home Depot and Lowe’s, in addition to the traditional</span></div>
+<div style="position:absolute;left:72.04px;top:213.33px" class="cls_006"><span class="cls_006">hardware stores, such as Ace.  While the smallest of the three segments in 1990, at $420 million (28%),</span></div>
+<div style="position:absolute;left:72.04px;top:225.33px" class="cls_006"><span class="cls_006">Professional-Tradesmen was growing fastest at 9% compared with a 7% growth rate for Consumer</span></div>
+<div style="position:absolute;left:72.04px;top:237.33px" class="cls_006"><span class="cls_006">and no growth for Professional-Industrial.  Some “heavy do-it-yourselfers” bought tools in the</span></div>
+<div style="position:absolute;left:72.04px;top:249.33px" class="cls_006"><span class="cls_006">Professional-Tradesmen segment, but this segment primarily comprised people who made a living</span></div>
+<div style="position:absolute;left:72.04px;top:261.33px" class="cls_006"><span class="cls_006">with their tools.</span></div>
+<div style="position:absolute;left:108.04px;top:285.46px" class="cls_006"><span class="cls_006">B&D participated in all three segments.  Black & Decker</span><span class="cls_012"><sup>®</sup></span><span class="cls_006">-brand power tools held nearly a</span></div>
+<div style="position:absolute;left:72.04px;top:296.28px" class="cls_006"><span class="cls_006">30% share of the U.S. market overall.</span><span class="cls_003"><sup>2</sup></span><span class="cls_006">  To serve these segments, B&D offered three separate lines and</span></div>
+<div style="position:absolute;left:72.04px;top:309.10px" class="cls_006"><span class="cls_006">brand designations all under the Black & Decker family name, as follows:</span></div>
+<div style="position:absolute;left:416.56px;top:343.85px" class="cls_018"><span class="cls_018">Approximate</span></div>
+<div style="position:absolute;left:389.08px;top:355.61px" class="cls_018"><span class="cls_018">B&D</span></div>
+<div style="position:absolute;left:470.32px;top:355.61px" class="cls_018"><span class="cls_018">B&D</span></div>
+<div style="position:absolute;left:74.68px;top:366.65px" class="cls_018"><span class="cls_018">U.S. Market</span></div>
+<div style="position:absolute;left:379.72px;top:366.65px" class="cls_018"><span class="cls_018">Segment</span></div>
+<div style="position:absolute;left:460.96px;top:366.65px" class="cls_018"><span class="cls_018">Segment</span></div>
+<div style="position:absolute;left:74.68px;top:377.69px" class="cls_018"><span class="cls_018">Segment</span></div>
+<div style="position:absolute;left:197.03px;top:377.69px" class="cls_018"><span class="cls_018">Brand Logo</span></div>
+<div style="position:absolute;left:283.42px;top:377.69px" class="cls_018"><span class="cls_018">Product Color</span></div>
+<div style="position:absolute;left:374.92px;top:377.69px" class="cls_018"><span class="cls_018">Share 1990</span></div>
+<div style="position:absolute;left:447.28px;top:377.69px" class="cls_018"><span class="cls_018">Revenues 1990</span></div>
+<div style="position:absolute;left:74.68px;top:395.14px" class="cls_023"><span class="cls_023">Professional-Industrial</span></div>
+<div style="position:absolute;left:283.48px;top:395.14px" class="cls_023"><span class="cls_023">Charcoal Grey</span></div>
+<div style="position:absolute;left:389.68px;top:395.14px" class="cls_023"><span class="cls_023">20%</span></div>
+<div style="position:absolute;left:461.19px;top:395.14px" class="cls_023"><span class="cls_023">$110 MM</span></div>
+<div style="position:absolute;left:74.68px;top:418.18px" class="cls_024"><span class="cls_024">•</span><span class="cls_023">    Size = $550MM</span></div>
+<div style="position:absolute;left:74.68px;top:441.22px" class="cls_023"><span class="cls_023">Professional-Tradesmen</span></div>
+<div style="position:absolute;left:283.48px;top:441.22px" class="cls_023"><span class="cls_023">Charcoal Grey</span></div>
+<div style="position:absolute;left:392.20px;top:441.22px" class="cls_023"><span class="cls_023">9%</span></div>
+<div style="position:absolute;left:463.71px;top:441.22px" class="cls_023"><span class="cls_023">$35 MM</span></div>
+<div style="position:absolute;left:74.68px;top:464.26px" class="cls_024"><span class="cls_024">•</span><span class="cls_023">    Size = $420MM</span></div>
+<div style="position:absolute;left:74.68px;top:487.30px" class="cls_023"><span class="cls_023">Consumer</span></div>
+<div style="position:absolute;left:283.48px;top:487.30px" class="cls_023"><span class="cls_023">Black</span></div>
+<div style="position:absolute;left:389.69px;top:487.30px" class="cls_023"><span class="cls_023">45%</span></div>
+<div style="position:absolute;left:461.20px;top:487.30px" class="cls_023"><span class="cls_023">$250 MM</span></div>
+<div style="position:absolute;left:74.68px;top:510.34px" class="cls_024"><span class="cls_024">•</span><span class="cls_023">    Size = $530MM</span></div>
+<div style="position:absolute;left:108.04px;top:543.58px" class="cls_006"><span class="cls_006">In the Professional-Industrial segment, B&D’s share was near parity with Milwaukee Electric</span></div>
+<div style="position:absolute;left:72.04px;top:555.58px" class="cls_006"><span class="cls_006">of Brookfield, Wisconsin.  Founded in 1924, Milwaukee was a privately held firm, selling only in the</span></div>
+<div style="position:absolute;left:72.04px;top:567.58px" class="cls_006"><span class="cls_006">high end of the market at a rate of approximately $200 million per year worldwide.  The second tier</span></div>
+<div style="position:absolute;left:72.04px;top:579.58px" class="cls_006"><span class="cls_006">suppliers in the Professional-Industrial segment were Bosch, Porter Cable, and Makita.  The very</span></div>
+<div style="position:absolute;left:72.04px;top:591.58px" class="cls_006"><span class="cls_006">knowledgeable purchase decision influencers in the Professional-Industrial segment viewed B&D as</span></div>
+<div style="position:absolute;left:72.04px;top:603.58px" class="cls_006"><span class="cls_006">offering  high-quality,  differentiated  products  and  excellent  service.    At  the  other  end  of  the</span></div>
+<div style="position:absolute;left:72.04px;top:615.58px" class="cls_006"><span class="cls_006">performance spectrum, in the Consumer segment, B&D’s brand recognition and image helped it</span></div>
+<div style="position:absolute;left:72.04px;top:627.58px" class="cls_006"><span class="cls_006">attain the #1 position in the marketplace with nearly a 50% share over suppliers such as Skil,</span></div>
+<div style="position:absolute;left:72.04px;top:639.58px" class="cls_006"><span class="cls_006">Craftsman, Wen, and various private label products.</span></div>
+<div style="position:absolute;left:72.04px;top:708.00px" class="cls_003"><span class="cls_003"><sup>2</sup></span><span class="cls_009">In addition, it manufactured some professional power tools under the Craftsman label for Sears, which held an</span></div>
+<div style="position:absolute;left:72.04px;top:721.01px" class="cls_009"><span class="cls_009">additional 4% of the Professional-Tradesmen segment.</span></div>
+<div style="position:absolute;left:72.04px;top:739.01px" class="cls_018"><span class="cls_018">4</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:3208px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background05.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.04px;top:36.20px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:510.69px;top:36.20px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:126.04px;top:69.34px" class="cls_006"><span class="cls_006">B&D’s strengths in the Professional-Industrial and Consumer segments did not transfer to the</span></div>
+<div style="position:absolute;left:90.04px;top:81.34px" class="cls_006"><span class="cls_006">Professional-Tradesmen segment, where the approximate share positions in 1990 were as shown in</span></div>
+<div style="position:absolute;left:90.04px;top:93.46px" class="cls_013"><span class="cls_013">Table A</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:90.04px;top:123.58px" class="cls_013"><span class="cls_013">Table A</span><span class="cls_006">   Power Tools, Professional-Tradesmen</span></div>
+<div style="position:absolute;left:133.96px;top:135.58px" class="cls_006"><span class="cls_006">Approximate Segment Shares, 1990</span></div>
+<div style="position:absolute;left:96.04px;top:173.62px" class="cls_023"><span class="cls_023">Makita</span></div>
+<div style="position:absolute;left:272.66px;top:173.62px" class="cls_023"><span class="cls_023">~50%</span></div>
+<div style="position:absolute;left:96.04px;top:188.74px" class="cls_023"><span class="cls_023">Milwaukee</span></div>
+<div style="position:absolute;left:272.66px;top:188.74px" class="cls_023"><span class="cls_023">~10%</span></div>
+<div style="position:absolute;left:96.04px;top:203.86px" class="cls_023"><span class="cls_023">Black & Decker</span></div>
+<div style="position:absolute;left:277.71px;top:203.86px" class="cls_023"><span class="cls_023">~9%</span></div>
+<div style="position:absolute;left:96.04px;top:218.98px" class="cls_023"><span class="cls_023">Ryobi</span></div>
+<div style="position:absolute;left:277.71px;top:218.98px" class="cls_023"><span class="cls_023">~9%</span></div>
+<div style="position:absolute;left:96.04px;top:234.10px" class="cls_023"><span class="cls_023">Skil</span></div>
+<div style="position:absolute;left:277.73px;top:234.10px" class="cls_023"><span class="cls_023">~5%</span></div>
+<div style="position:absolute;left:96.04px;top:248.37px" class="cls_023"><span class="cls_023">Craftsman</span><span class="cls_025"><sup>a</sup></span></div>
+<div style="position:absolute;left:277.72px;top:249.22px" class="cls_023"><span class="cls_023">~5%</span></div>
+<div style="position:absolute;left:96.04px;top:264.34px" class="cls_023"><span class="cls_023">Porter-Cable</span></div>
+<div style="position:absolute;left:277.73px;top:264.34px" class="cls_023"><span class="cls_023">~3%</span></div>
+<div style="position:absolute;left:96.04px;top:279.46px" class="cls_023"><span class="cls_023">Bosch</span></div>
+<div style="position:absolute;left:277.70px;top:279.46px" class="cls_023"><span class="cls_023">~3%</span></div>
+<div style="position:absolute;left:90.04px;top:314.37px" class="cls_026"><span class="cls_026">aManufactured in part by B&D and marketed by Sears.</span></div>
+<div style="position:absolute;left:90.04px;top:345.10px" class="cls_006"><span class="cls_006">Three product types—drills, saws, and sanders—represented nearly 80% of the total sales in the</span></div>
+<div style="position:absolute;left:90.04px;top:357.10px" class="cls_006"><span class="cls_006">Professional-Tradesmen segment.  The top three manufacturers offered broad product lines at</span></div>
+<div style="position:absolute;left:90.04px;top:369.10px" class="cls_006"><span class="cls_006">approximately 175 SKUs each.  Since its entry into the market in 1978, Makita had staked out</span></div>
+<div style="position:absolute;left:90.04px;top:381.10px" class="cls_006"><span class="cls_006">leadership  positions  in  virtually  all  products  and  distribution  types  within  the  Professional-</span></div>
+<div style="position:absolute;left:90.04px;top:393.22px" class="cls_006"><span class="cls_006">Tradesmen segment.  </span><span class="cls_013">Exhibit 1</span><span class="cls_006"> shows approximate shares for Makita, Milwaukee, and B&D for the</span></div>
+<div style="position:absolute;left:90.04px;top:405.34px" class="cls_006"><span class="cls_006">largest categories in the segment.  </span><span class="cls_013">Exhibit 2</span><span class="cls_006"> shows shares of Makita and B&D by the five major outlet</span></div>
+<div style="position:absolute;left:90.04px;top:417.34px" class="cls_006"><span class="cls_006">types:</span></div>
+<div style="position:absolute;left:123.03px;top:417.34px" class="cls_006"><span class="cls_006">(i) Two-Step (sales through distributors to independent retailers, such as Ace and ServiStar),</span></div>
+<div style="position:absolute;left:90.04px;top:429.34px" class="cls_006"><span class="cls_006">(ii) Home Centers, (iii) Warehouse Home Centers, (iv) Membership Clubs, and (v) Farm Outlets.</span></div>
+<div style="position:absolute;left:126.04px;top:453.34px" class="cls_006"><span class="cls_006">Professional-Tradesmen revenues of approximately $35 million in 1990 for B&D translated</span></div>
+<div style="position:absolute;left:90.04px;top:465.34px" class="cls_006"><span class="cls_006">into about $3 million in operating income.  Gross margins ran about 35%,  but SG+A costs were about</span></div>
+<div style="position:absolute;left:90.04px;top:477.34px" class="cls_006"><span class="cls_006">25%.</span></div>
+<div style="position:absolute;left:126.04px;top:501.34px" class="cls_006"><span class="cls_006">These  numbers  had  become  even  more  vivid  for  Galli  in  a  recent  Monday  morning</span></div>
+<div style="position:absolute;left:90.04px;top:513.34px" class="cls_006"><span class="cls_006">conversation with his boss, Gary DiCamillo, B&D’s president of Power Tools for the United States,</span></div>
+<div style="position:absolute;left:90.04px;top:525.34px" class="cls_006"><span class="cls_006">who recounted this story:</span></div>
+<div style="position:absolute;left:162.04px;top:549.33px" class="cls_006"><span class="cls_006">Joe, yesterday, I stopped by that new Home Depot.  It was a nice afternoon;</span></div>
+<div style="position:absolute;left:126.04px;top:561.33px" class="cls_006"><span class="cls_006">lots of people around.  They had one of those woodworking guys out on the sidewalk</span></div>
+<div style="position:absolute;left:126.04px;top:573.33px" class="cls_006"><span class="cls_006">giving demonstrations for a couple of hours.  He was using all Skil saws, and he was</span></div>
+<div style="position:absolute;left:126.04px;top:585.33px" class="cls_006"><span class="cls_006">just packing up to go home when I came by at about 4 o’clock.</span></div>
+<div style="position:absolute;left:162.04px;top:609.33px" class="cls_006"><span class="cls_006">I said to him</span></div>
+<div style="position:absolute;left:225.34px;top:609.33px" class="cls_006"><span class="cls_006">“What do you think of the Skil saws?” “Pretty good,” he said.</span></div>
+<div style="position:absolute;left:126.04px;top:621.33px" class="cls_006"><span class="cls_006">So, I said,</span></div>
+<div style="position:absolute;left:181.31px;top:621.33px" class="cls_006"><span class="cls_006">“Who else do you like?”  He said “Oh,  Milwaukee  makes  a  nice</span></div>
+<div style="position:absolute;left:126.04px;top:633.33px" class="cls_006"><span class="cls_006">reciprocating saw; Ryobi’s got some okay things.” “What about Makita?” I said.  He</span></div>
+<div style="position:absolute;left:126.04px;top:645.33px" class="cls_006"><span class="cls_006">said, “Oh, they’re okay—they’re all pretty good really—you just have to stay away</span></div>
+<div style="position:absolute;left:126.04px;top:657.33px" class="cls_006"><span class="cls_006">from that Black & Decker!”</span></div>
+<div style="position:absolute;left:535.00px;top:739.01px" class="cls_018"><span class="cls_018">5</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4010px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background06.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.04px;top:36.20px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:299.26px;top:36.20px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:72.04px;top:69.70px" class="cls_007"><span class="cls_007">Black & Decker and the Professional Segment Buyer</span></div>
+<div style="position:absolute;left:108.04px;top:98.38px" class="cls_006"><span class="cls_006">While the “just got to stay away from that Black & Decker” view was perhaps extreme, Galli</span></div>
+<div style="position:absolute;left:72.04px;top:110.38px" class="cls_006"><span class="cls_006">understood  that  B&D’s  strength  as  a  consumer  brand  was  not  necessarily  beneficial  for  the</span></div>
+<div style="position:absolute;left:72.04px;top:122.38px" class="cls_006"><span class="cls_006">Professional-Tradesmen segment.  Some tradespeople viewed all B&D products as for use at home</span></div>
+<div style="position:absolute;left:72.04px;top:134.38px" class="cls_006"><span class="cls_006">rather than on the job; and, conversely, there had been instances of a B&D product designed for at</span></div>
+<div style="position:absolute;left:72.04px;top:146.38px" class="cls_006"><span class="cls_006">home use being subjected to the demands of the job site and failing.</span></div>
+<div style="position:absolute;left:108.04px;top:170.38px" class="cls_006"><span class="cls_006">The typical plumber, electrician, or general remodeler working in residential construction</span></div>
+<div style="position:absolute;left:72.04px;top:182.38px" class="cls_006"><span class="cls_006">had about $3,000 invested in 10 or so “tools-of-the-trade.”  He or she bought tools when  a</span></div>
+<div style="position:absolute;left:72.04px;top:194.38px" class="cls_006"><span class="cls_006">replacement was needed, spending on average $1,000 per year.  Tools and their performance were a</span></div>
+<div style="position:absolute;left:72.04px;top:206.38px" class="cls_006"><span class="cls_006">constant topic of conversation at the job site.  Generally, tradespeople were satisfied with the tools</span></div>
+<div style="position:absolute;left:72.04px;top:218.38px" class="cls_006"><span class="cls_006">available—the perception being that Makita provided a good baseline option in all major categories,</span></div>
+<div style="position:absolute;left:72.04px;top:230.37px" class="cls_006"><span class="cls_006">and other suppliers had particular product strengths, e.g., Skil in circular saws.</span></div>
+<div style="position:absolute;left:108.04px;top:254.50px" class="cls_006"><span class="cls_006">As noted above in </span><span class="cls_013">Exhibit 2</span><span class="cls_006">, this buyer bought most frequently in independently owned</span></div>
+<div style="position:absolute;left:72.04px;top:266.62px" class="cls_006"><span class="cls_006">stores served by distributors, i.e., the Two-Step in </span><span class="cls_013">Exhibit 2</span><span class="cls_006">.  However, the Home Centers noted in</span></div>
+<div style="position:absolute;left:72.04px;top:278.74px" class="cls_013"><span class="cls_013">Exhibit 2</span><span class="cls_006"> were growing in importance.  For example, the largest single outlet of Professional-</span></div>
+<div style="position:absolute;left:72.04px;top:290.74px" class="cls_006"><span class="cls_006">Tradesmen tool sales in 1990 was The Home Depot at approximately $5 million; second was Home</span></div>
+<div style="position:absolute;left:72.04px;top:302.74px" class="cls_006"><span class="cls_006">Club at $3.5 million, compared to the largest of the Two-Steps, Ace and ServiStar, at $2 million each.</span></div>
+<div style="position:absolute;left:72.04px;top:314.74px" class="cls_006"><span class="cls_006">The Home Depot was the largest of the rapidly growing collection of home improvement chain stores.</span></div>
+<div style="position:absolute;left:72.04px;top:326.73px" class="cls_006"><span class="cls_006">With 145 stores and $3.8 billion in 1990 sales, The Home Depot’s strategy was to stock 30,000 items in</span></div>
+<div style="position:absolute;left:72.04px;top:338.73px" class="cls_006"><span class="cls_006">a 100,000 square foot location, with prices about 30% less than the traditional hardware store, while</span></div>
+<div style="position:absolute;left:72.04px;top:350.73px" class="cls_006"><span class="cls_006">also providing superior customer service.  Makita’s rise to marketplace dominance was aided by the</span></div>
+<div style="position:absolute;left:72.04px;top:362.73px" class="cls_006"><span class="cls_006">rapid development of this new type of distribution.</span></div>
+<div style="position:absolute;left:108.04px;top:386.73px" class="cls_006"><span class="cls_006">B&D’s research on tradespeople’s perceptions of suppliers’ quality showed four tiers in the</span></div>
+<div style="position:absolute;left:72.04px;top:398.85px" class="cls_006"><span class="cls_006">marketplace, as shown in </span><span class="cls_013">Figure C</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:72.04px;top:428.97px" class="cls_013"><span class="cls_013">Figure C </span><span class="cls_006">   Brand Perceptions of Professional-Tradesmen Segment Buyers</span></div>
+<div style="position:absolute;left:78.40px;top:455.69px" class="cls_018"><span class="cls_018">Highest</span></div>
+<div style="position:absolute;left:410.92px;top:455.69px" class="cls_018"><span class="cls_018">Lowest</span></div>
+<div style="position:absolute;left:78.40px;top:470.38px" class="cls_023"><span class="cls_023">—Makita</span></div>
+<div style="position:absolute;left:172.04px;top:470.38px" class="cls_023"><span class="cls_023">—Bosch</span></div>
+<div style="position:absolute;left:265.61px;top:470.38px" class="cls_023"><span class="cls_023">—Black & Decker</span></div>
+<div style="position:absolute;left:414.39px;top:470.38px" class="cls_023"><span class="cls_023">—Wen</span></div>
+<div style="position:absolute;left:78.40px;top:485.50px" class="cls_023"><span class="cls_023">—Milwaukee</span></div>
+<div style="position:absolute;left:171.96px;top:485.50px" class="cls_023"><span class="cls_023">—Hitachi</span></div>
+<div style="position:absolute;left:265.55px;top:485.50px" class="cls_023"><span class="cls_023">—Ryobi</span></div>
+<div style="position:absolute;left:172.00px;top:500.62px" class="cls_023"><span class="cls_023">—Porter Cable</span></div>
+<div style="position:absolute;left:265.63px;top:500.62px" class="cls_023"><span class="cls_023">—Skil</span></div>
+<div style="position:absolute;left:172.00px;top:515.74px" class="cls_023"><span class="cls_023">—Panasonic</span></div>
+<div style="position:absolute;left:265.60px;top:515.74px" class="cls_023"><span class="cls_023">—Craftsman (Sears)</span></div>
+<div style="position:absolute;left:108.04px;top:540.58px" class="cls_006"><span class="cls_006">Both  Milwaukee  and  Makita  priced  at  premiums  over  B&D,  averaging  10%  and  5%,</span></div>
+<div style="position:absolute;left:72.04px;top:552.58px" class="cls_006"><span class="cls_006">respectively.  Despite the price premium over B&D, Makita’s prices on some products were less than</span></div>
+<div style="position:absolute;left:72.04px;top:564.58px" class="cls_006"><span class="cls_006">half of what the product sold for in Makita’s home market, Japan, where Makita was #2 in market</span></div>
+<div style="position:absolute;left:72.04px;top:576.58px" class="cls_006"><span class="cls_006">share to Hitachi.</span></div>
+<div style="position:absolute;left:108.04px;top:600.58px" class="cls_006"><span class="cls_006">While Makita’s position with tradespeople was strong, retailers were not uniformly positive</span></div>
+<div style="position:absolute;left:72.04px;top:612.58px" class="cls_006"><span class="cls_006">toward Makita.  Some regarded it as “arrogant and dictatorial.”  Makita offered no channel</span></div>
+<div style="position:absolute;left:72.04px;top:624.58px" class="cls_006"><span class="cls_006">protection, selling the same products throughout a range of outlets including the discount oriented</span></div>
+<div style="position:absolute;left:72.04px;top:636.58px" class="cls_006"><span class="cls_006">Membership Clubs, which B&D had decided not to include among its distributors of Professional-</span></div>
+<div style="position:absolute;left:72.04px;top:648.70px" class="cls_006"><span class="cls_006">Tradesmen tools (see </span><span class="cls_013">Exhibit 2</span><span class="cls_006">).  Some believed Makita to be “trading-down” its offerings by, among</span></div>
+<div style="position:absolute;left:72.04px;top:660.70px" class="cls_006"><span class="cls_006">other things, positioning them as appropriate for Father’s Day giving.</span></div>
+<div style="position:absolute;left:108.04px;top:684.70px" class="cls_006"><span class="cls_006">While no tradesperson would explicitly note “product color” as a key attribute in the</span></div>
+<div style="position:absolute;left:72.04px;top:696.69px" class="cls_006"><span class="cls_006">purchase decision, color was generally regarded as a significant product differentiator.  Consumer</span></div>
+<div style="position:absolute;left:72.04px;top:708.69px" class="cls_006"><span class="cls_006">tool manufacturers had largely followed B&D’s 1981 lead of making consumer tools black or charcoal</span></div>
+<div style="position:absolute;left:72.04px;top:739.01px" class="cls_018"><span class="cls_018">6</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:4812px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background07.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.04px;top:36.20px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:510.69px;top:36.20px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:90.04px;top:69.34px" class="cls_006"><span class="cls_006">grey.  B&D’s policy was to use black as its consumer grade color and charcoal grey for its</span></div>
+<div style="position:absolute;left:90.04px;top:81.34px" class="cls_006"><span class="cls_006">Professional-Industrial and Professional-Tradesmen grades.  Competing brands of professional tools</span></div>
+<div style="position:absolute;left:90.04px;top:93.46px" class="cls_006"><span class="cls_006">were more highly differentiated in color, as shown in </span><span class="cls_013">Figure D</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:90.04px;top:123.58px" class="cls_013"><span class="cls_013">Figure D</span><span class="cls_006">   Color Differentiation: Professional End Users</span></div>
+<div style="position:absolute;left:269.10px;top:191.41px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Makita - Teal</span></div>
+<div style="position:absolute;left:269.10px;top:205.65px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Milwaukee - Red</span></div>
+<div style="position:absolute;left:269.10px;top:219.90px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Bosch - Dark</span></div>
+<div style="position:absolute;left:416.73px;top:221.53px" class="cls_028"><span class="cls_028">Professional</span></div>
+<div style="position:absolute;left:269.10px;top:234.15px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Hitachi - Green</span></div>
+<div style="position:absolute;left:430.24px;top:232.97px" class="cls_028"><span class="cls_028">Grade</span></div>
+<div style="position:absolute;left:269.10px;top:248.40px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Black and Decker</span></div>
+<div style="position:absolute;left:305.10px;top:260.51px" class="cls_028"><span class="cls_028">- Charcoal Grey</span></div>
+<div style="position:absolute;left:266.90px;top:276.92px" class="cls_028"><span class="cls_028">Black/Charcoal Gre y</span></div>
+<div style="position:absolute;left:459.40px;top:274.55px" class="cls_028"><span class="cls_028">Consumer</span></div>
+<div style="position:absolute;left:468.62px;top:285.99px" class="cls_028"><span class="cls_028">Grade</span></div>
+<div style="position:absolute;left:213.41px;top:294.32px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Black and Decker</span></div>
+<div style="position:absolute;left:325.35px;top:294.32px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Wen</span></div>
+<div style="position:absolute;left:213.41px;top:308.57px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Craftsman</span></div>
+<div style="position:absolute;left:325.35px;top:308.57px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Private Label</span></div>
+<div style="position:absolute;left:213.41px;top:322.82px" class="cls_027"><span class="cls_027">•</span><span class="cls_028"> Skil</span></div>
+<div style="position:absolute;left:353.15px;top:320.68px" class="cls_028"><span class="cls_028">Products</span></div>
+<div style="position:absolute;left:90.04px;top:376.91px" class="cls_029"><span class="cls_029">Black & Decker Product Research</span></div>
+<div style="position:absolute;left:126.04px;top:405.59px" class="cls_030"><span class="cls_030">Product development had been a B&D focus since 1985 and B&D tools were highly regarded</span></div>
+<div style="position:absolute;left:90.04px;top:417.59px" class="cls_030"><span class="cls_030">in the demanding Professional-Industrial segment, so Galli believed that the source of B&D’s share</span></div>
+<div style="position:absolute;left:90.04px;top:429.59px" class="cls_030"><span class="cls_030">problem in the Professional-Tradesmen segment was not inherent product quality.  This belief was</span></div>
+<div style="position:absolute;left:90.04px;top:441.59px" class="cls_030"><span class="cls_030">tested in two ways.  First, B&D conducted laboratory tests on its own and competitive products to</span></div>
+<div style="position:absolute;left:90.04px;top:453.71px" class="cls_030"><span class="cls_030">assess performance, reliability, and durability.  </span><span class="cls_031">Figure E</span><span class="cls_030"> summarizes the results for the 14 major</span></div>
+<div style="position:absolute;left:90.04px;top:465.71px" class="cls_030"><span class="cls_030">Professional-Tradesmen products.  B&D’s offerings were characterized on a scale ranging from</span></div>
+<div style="position:absolute;left:90.04px;top:477.70px" class="cls_030"><span class="cls_030">weak/undeveloped to competitive to leadership.</span></div>
+<div style="position:absolute;left:126.04px;top:503.74px" class="cls_030"><span class="cls_030">Second, B&D did extensive field tests.  All identifying marks and colors were removed from</span></div>
+<div style="position:absolute;left:90.04px;top:515.74px" class="cls_030"><span class="cls_030">products (both B&D and competitors).  The products were then used in actual work situations for one</span></div>
+<div style="position:absolute;left:90.04px;top:527.74px" class="cls_030"><span class="cls_030">month.  Users provided comments on product performance and their interest in buying the product</span></div>
+<div style="position:absolute;left:90.04px;top:539.74px" class="cls_030"><span class="cls_030">when a replacement was needed.  This user testing supported the findings of the laboratory tests of</span></div>
+<div style="position:absolute;left:90.04px;top:551.86px" class="cls_031"><span class="cls_031">Figure E</span><span class="cls_030">, i.e., B&D’s product quality was very strongly competitive in the large majority of product</span></div>
+<div style="position:absolute;left:90.04px;top:563.86px" class="cls_030"><span class="cls_030">categories.</span></div>
+<div style="position:absolute;left:535.00px;top:739.01px" class="cls_018"><span class="cls_018">7</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background08.jpg" width=612 height=792></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:5614px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background09.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.04px;top:36.12px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:510.69px;top:36.12px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:90.04px;top:79.55px" class="cls_007"><span class="cls_007">Research on Brand Awareness and Perceptions</span></div>
+<div style="position:absolute;left:126.04px;top:102.36px" class="cls_006"><span class="cls_006">Telephone surveys and B&D’s annual Image Study provided data on brand awareness,</span></div>
+<div style="position:absolute;left:90.04px;top:114.36px" class="cls_006"><span class="cls_006">relative perceived quality, and ratings on specific attributes.  Overall awareness of the major brands</span></div>
+<div style="position:absolute;left:90.04px;top:126.48px" class="cls_006"><span class="cls_006">among the Professional-Tradesmen segment end users are shown in </span><span class="cls_013">Table B</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:90.04px;top:156.60px" class="cls_013"><span class="cls_013">Table B</span></div>
+<div style="position:absolute;left:137.32px;top:156.60px" class="cls_006"><span class="cls_006">1990 Total Awareness of Power Tool Suppliers</span></div>
+<div style="position:absolute;left:133.96px;top:168.60px" class="cls_006"><span class="cls_006">Among Tradespeople</span></div>
+<div style="position:absolute;left:194.56px;top:199.88px" class="cls_018"><span class="cls_018">Awareness</span></div>
+<div style="position:absolute;left:96.76px;top:222.72px" class="cls_023"><span class="cls_023">Black & Decker</span></div>
+<div style="position:absolute;left:180.35px;top:222.72px" class="cls_023"><span class="cls_023">98%</span></div>
+<div style="position:absolute;left:238.56px;top:222.72px" class="cls_023"><span class="cls_023">Hitachi</span></div>
+<div style="position:absolute;left:313.95px;top:222.72px" class="cls_023"><span class="cls_023">77%</span></div>
+<div style="position:absolute;left:96.76px;top:233.76px" class="cls_023"><span class="cls_023">Milwaukee</span></div>
+<div style="position:absolute;left:180.38px;top:233.76px" class="cls_023"><span class="cls_023">95%</span></div>
+<div style="position:absolute;left:238.58px;top:233.76px" class="cls_023"><span class="cls_023">Hilti</span></div>
+<div style="position:absolute;left:313.95px;top:233.76px" class="cls_023"><span class="cls_023">73%</span></div>
+<div style="position:absolute;left:96.76px;top:244.80px" class="cls_023"><span class="cls_023">Skil</span></div>
+<div style="position:absolute;left:180.39px;top:244.80px" class="cls_023"><span class="cls_023">93%</span></div>
+<div style="position:absolute;left:238.57px;top:244.80px" class="cls_023"><span class="cls_023">Porter Cable</span></div>
+<div style="position:absolute;left:313.98px;top:244.80px" class="cls_023"><span class="cls_023">67%</span></div>
+<div style="position:absolute;left:96.76px;top:255.84px" class="cls_023"><span class="cls_023">Makita</span></div>
+<div style="position:absolute;left:180.39px;top:255.84px" class="cls_023"><span class="cls_023">90%</span></div>
+<div style="position:absolute;left:238.59px;top:255.84px" class="cls_023"><span class="cls_023">Ryobi</span></div>
+<div style="position:absolute;left:313.95px;top:255.84px" class="cls_023"><span class="cls_023">50%</span></div>
+<div style="position:absolute;left:96.76px;top:266.88px" class="cls_023"><span class="cls_023">Bosch</span></div>
+<div style="position:absolute;left:180.38px;top:266.88px" class="cls_023"><span class="cls_023">87%</span></div>
+<div style="position:absolute;left:126.04px;top:301.08px" class="cls_006"><span class="cls_006">Respondents were also asked to state their level of agreement with the statement, “</span><span class="cls_005">Brand X</span><span class="cls_006"> is</span></div>
+<div style="position:absolute;left:90.04px;top:313.08px" class="cls_006"><span class="cls_006">one of the Best.”  The data on percentage of respondents “agreeing” or “strongly agreeing” with the</span></div>
+<div style="position:absolute;left:90.04px;top:325.20px" class="cls_006"><span class="cls_006">statement are in </span><span class="cls_013">Table C</span><span class="cls_006">.</span></div>
+<div style="position:absolute;left:90.04px;top:355.32px" class="cls_013"><span class="cls_013">Table C</span></div>
+<div style="position:absolute;left:137.92px;top:355.32px" class="cls_006"><span class="cls_006">”One of the Best” Agreement Data</span></div>
+<div style="position:absolute;left:96.40px;top:391.68px" class="cls_023"><span class="cls_023">Milwaukee</span></div>
+<div style="position:absolute;left:269.07px;top:391.68px" class="cls_023"><span class="cls_023">80%</span></div>
+<div style="position:absolute;left:96.40px;top:402.72px" class="cls_023"><span class="cls_023">Makita</span></div>
+<div style="position:absolute;left:269.07px;top:402.72px" class="cls_023"><span class="cls_023">67%</span></div>
+<div style="position:absolute;left:96.40px;top:413.76px" class="cls_023"><span class="cls_023">Black & Decker</span></div>
+<div style="position:absolute;left:269.06px;top:413.76px" class="cls_023"><span class="cls_023">44%</span></div>
+<div style="position:absolute;left:126.04px;top:447.96px" class="cls_006"><span class="cls_006">The Image Study provided the same agree/strongly agree data at the level of specific</span></div>
+<div style="position:absolute;left:90.04px;top:460.08px" class="cls_006"><span class="cls_006">attributes.  In particular, </span><span class="cls_013">Table D</span><span class="cls_006"> segregates those expressing a preference for Makita and those</span></div>
+<div style="position:absolute;left:90.04px;top:472.08px" class="cls_006"><span class="cls_006">expressing a preference for Milwaukee and compares perceptions of those brands to perceptions of</span></div>
+<div style="position:absolute;left:90.04px;top:484.08px" class="cls_006"><span class="cls_006">B&D.</span></div>
+<div style="position:absolute;left:90.04px;top:514.20px" class="cls_013"><span class="cls_013">Table D</span><span class="cls_006">   Percent Agreeing with the Statement</span></div>
+<div style="position:absolute;left:279.52px;top:545.48px" class="cls_018"><span class="cls_018">Those Who</span></div>
+<div style="position:absolute;left:421.24px;top:545.48px" class="cls_018"><span class="cls_018">Those Who</span></div>
+<div style="position:absolute;left:275.56px;top:556.52px" class="cls_018"><span class="cls_018">Prefer Makita</span></div>
+<div style="position:absolute;left:409.96px;top:556.52px" class="cls_018"><span class="cls_018">Prefer Milwaukee</span></div>
+<div style="position:absolute;left:267.40px;top:568.28px" class="cls_018"><span class="cls_018">Makita</span></div>
+<div style="position:absolute;left:323.20px;top:568.28px" class="cls_018"><span class="cls_018">B&D</span></div>
+<div style="position:absolute;left:394.24px;top:568.28px" class="cls_018"><span class="cls_018">Milwaukee</span></div>
+<div style="position:absolute;left:477.62px;top:568.28px" class="cls_018"><span class="cls_018">B&D</span></div>
+<div style="position:absolute;left:96.04px;top:591.12px" class="cls_023"><span class="cls_023">Makes High-Quality Tools</span></div>
+<div style="position:absolute;left:273.54px;top:591.12px" class="cls_023"><span class="cls_023">82%</span></div>
+<div style="position:absolute;left:323.11px;top:591.12px" class="cls_023"><span class="cls_023">51%</span></div>
+<div style="position:absolute;left:408.55px;top:591.12px" class="cls_023"><span class="cls_023">91%</span></div>
+<div style="position:absolute;left:480.44px;top:591.12px" class="cls_023"><span class="cls_023">43%</span></div>
+<div style="position:absolute;left:96.04px;top:602.16px" class="cls_023"><span class="cls_023">Makes Durable/Rugged Tools</span></div>
+<div style="position:absolute;left:273.54px;top:602.16px" class="cls_023"><span class="cls_023">71%</span></div>
+<div style="position:absolute;left:323.10px;top:602.16px" class="cls_023"><span class="cls_023">48%</span></div>
+<div style="position:absolute;left:408.55px;top:602.16px" class="cls_023"><span class="cls_023">91%</span></div>
+<div style="position:absolute;left:480.43px;top:602.16px" class="cls_023"><span class="cls_023">42%</span></div>
+<div style="position:absolute;left:96.04px;top:613.20px" class="cls_023"><span class="cls_023">Proud to Own</span></div>
+<div style="position:absolute;left:273.57px;top:613.20px" class="cls_023"><span class="cls_023">78%</span></div>
+<div style="position:absolute;left:323.12px;top:613.20px" class="cls_023"><span class="cls_023">43%</span></div>
+<div style="position:absolute;left:408.55px;top:613.20px" class="cls_023"><span class="cls_023">86%</span></div>
+<div style="position:absolute;left:480.42px;top:613.20px" class="cls_023"><span class="cls_023">36%</span></div>
+<div style="position:absolute;left:96.04px;top:624.96px" class="cls_023"><span class="cls_023">Easy to Get Service</span></div>
+<div style="position:absolute;left:273.54px;top:624.96px" class="cls_023"><span class="cls_023">44%</span></div>
+<div style="position:absolute;left:323.10px;top:624.96px" class="cls_023"><span class="cls_023">67%</span></div>
+<div style="position:absolute;left:408.53px;top:624.96px" class="cls_023"><span class="cls_023">68%</span></div>
+<div style="position:absolute;left:480.41px;top:624.96px" class="cls_023"><span class="cls_023">66%</span></div>
+<div style="position:absolute;left:96.04px;top:636.00px" class="cls_023"><span class="cls_023">Stands Behind Products</span></div>
+<div style="position:absolute;left:273.57px;top:636.00px" class="cls_023"><span class="cls_023">56%</span></div>
+<div style="position:absolute;left:323.12px;top:636.00px" class="cls_023"><span class="cls_023">61%</span></div>
+<div style="position:absolute;left:408.55px;top:636.00px" class="cls_023"><span class="cls_023">69%</span></div>
+<div style="position:absolute;left:480.42px;top:636.00px" class="cls_023"><span class="cls_023">52%</span></div>
+<div style="position:absolute;left:126.04px;top:670.20px" class="cls_006"><span class="cls_006">As Galli reflected on the research data, he recalled some of the comments made to him by two</span></div>
+<div style="position:absolute;left:90.04px;top:682.20px" class="cls_006"><span class="cls_006">tradesmen during site visits:</span></div>
+<div style="position:absolute;left:126.04px;top:706.20px" class="cls_006"><span class="cls_006">“. . . Black & Decker makes a good popcorn popper, and my wife just loves her Dustbuster,</span></div>
+<div style="position:absolute;left:90.04px;top:718.20px" class="cls_006"><span class="cls_006">but I’m out here trying to make a living . . .”</span></div>
+<div style="position:absolute;left:535.00px;top:738.92px" class="cls_018"><span class="cls_018">9</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:6416px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background10.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.04px;top:36.12px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:299.26px;top:36.12px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:108.04px;top:69.36px" class="cls_006"><span class="cls_006">“. . . On the job, people notice what you’re working with . . . if I came out here with one of</span></div>
+<div style="position:absolute;left:72.04px;top:81.36px" class="cls_006"><span class="cls_006">those Black & Decker gray things, I’d be laughed at.”</span></div>
+<div style="position:absolute;left:108.04px;top:105.36px" class="cls_006"><span class="cls_006">Galli knew that a copycat strategy, e.g., paint it blue and spend some advertising dollars on a</span></div>
+<div style="position:absolute;left:72.04px;top:117.36px" class="cls_006"><span class="cls_006">“Black & Decker as appropriate for the tradesmen” theme, would not receive internal support.  Three</span></div>
+<div style="position:absolute;left:72.04px;top:129.36px" class="cls_006"><span class="cls_006">options presented themselves:</span></div>
+<div style="position:absolute;left:72.04px;top:157.55px" class="cls_007"><span class="cls_007">Option 1.  Harvest Professional-Tradesmen Channels</span></div>
+<div style="position:absolute;left:108.04px;top:186.36px" class="cls_006"><span class="cls_006">In this strategy, B&D would focus on the Consumer and the Professional-Industrial segments.</span></div>
+<div style="position:absolute;left:72.04px;top:198.36px" class="cls_006"><span class="cls_006">In the Professional-Tradesmen segment, the focus would be on profitability even at the expense of</span></div>
+<div style="position:absolute;left:72.04px;top:210.36px" class="cls_006"><span class="cls_006">market share.</span></div>
+<div style="position:absolute;left:72.04px;top:238.55px" class="cls_007"><span class="cls_007">Option 2.  Get Behind Black & Decker Name with Sub-Branding</span></div>
+<div style="position:absolute;left:108.04px;top:267.36px" class="cls_006"><span class="cls_006">While  there  had  been  several  half-hearted  attempts  to  rebuild  the  B&D  name  in  the</span></div>
+<div style="position:absolute;left:72.04px;top:279.36px" class="cls_006"><span class="cls_006">Professional-Tradesmen segment, they had not been successful.  One new aspect which might offer</span></div>
+<div style="position:absolute;left:72.04px;top:291.36px" class="cls_006"><span class="cls_006">promise, though, was the sub-branding strategy, which had been so successful with the Spacemaker</span></div>
+<div style="position:absolute;left:72.04px;top:303.36px" class="cls_006"><span class="cls_006">line and which Galli had used earlier in his career in the accessories business.  Specifically, he had</span></div>
+<div style="position:absolute;left:72.04px;top:315.24px" class="cls_006"><span class="cls_006">transitioned replacement saw blades from “Black & Decker” brand to “Piranha</span><span class="cls_012"><sup>®</sup></span><span class="cls_006"> by Black & Decker.”</span></div>
+<div style="position:absolute;left:72.04px;top:327.36px" class="cls_006"><span class="cls_006">(See </span><span class="cls_013">Exhibit 3</span><span class="cls_006">.)  In 1990, B&D had introduced the Sawcat</span><span class="cls_012"><sup>™</sup></span><span class="cls_006">and Super Sawcat</span><span class="cls_012"><sup>™</sup></span><span class="cls_006"> circular saws with some</span></div>
+<div style="position:absolute;left:72.04px;top:339.48px" class="cls_006"><span class="cls_006">success.  An intense sub-branding program could be developed in an integrated fashion.</span></div>
+<div style="position:absolute;left:72.04px;top:367.67px" class="cls_007"><span class="cls_007">Option 3. Drop the Black & Decker Name from the Professional-Tradesmen Segment</span></div>
+<div style="position:absolute;left:108.04px;top:396.48px" class="cls_006"><span class="cls_006">Galli imagined what internal reaction would be to such a proposal.  Everyone had taken great</span></div>
+<div style="position:absolute;left:72.04px;top:408.48px" class="cls_006"><span class="cls_006">pride in the #7 “brand power” position of the B&D name.  As one of his colleagues commented to</span></div>
+<div style="position:absolute;left:72.04px;top:420.48px" class="cls_006"><span class="cls_006">him, “Joe, it can’t make sense to pull the name of the creator of the power tools industry from a power</span></div>
+<div style="position:absolute;left:72.04px;top:432.48px" class="cls_006"><span class="cls_006">tool.  You’d be saying that B&D can’t make it in power tools.  Besides, if General Electric can put its</span></div>
+<div style="position:absolute;left:72.04px;top:444.48px" class="cls_006"><span class="cls_006">name on everything from jet engines to telephones, why can’t we?”</span></div>
+<div style="position:absolute;left:108.04px;top:468.48px" class="cls_006"><span class="cls_006">If he were to propose dropping the B&D name, he would need an alternative.  One possibility</span></div>
+<div style="position:absolute;left:72.04px;top:480.48px" class="cls_006"><span class="cls_006">was to develop a new brand name free of any negative associations, similar to Toyota’s creation of the</span></div>
+<div style="position:absolute;left:72.04px;top:492.48px" class="cls_006"><span class="cls_006">Lexus brand.  The other would be to use some other name already in B&D stable of brands.  One of</span></div>
+<div style="position:absolute;left:72.04px;top:504.36px" class="cls_006"><span class="cls_006">these possibilities was the DeWalt</span><span class="cls_012"><sup>® </sup></span><span class="cls_006">brand from a line of stationary woodworking equipment.  DeWalt</span></div>
+<div style="position:absolute;left:72.04px;top:516.48px" class="cls_006"><span class="cls_006">was founded in 1918 and bought by Black & Decker in 1960.  DeWalt was a leader in sales of large</span></div>
+<div style="position:absolute;left:72.04px;top:528.48px" class="cls_006"><span class="cls_006">radial arm saws permanently installed at lumber yards.  While sales of DeWalt products had reached</span></div>
+<div style="position:absolute;left:72.04px;top:540.48px" class="cls_006"><span class="cls_006">$70 million annually at one time under B&D, the company had recently deemphasized the line due to</span></div>
+<div style="position:absolute;left:72.04px;top:552.48px" class="cls_006"><span class="cls_006">the amount of product liability exposure that came with large, stationary woodworking equipment.</span></div>
+<div style="position:absolute;left:72.04px;top:564.48px" class="cls_006"><span class="cls_006">The DeWalt name had never been used on a portable power tool.</span></div>
+<div style="position:absolute;left:108.04px;top:588.60px" class="cls_006"><span class="cls_006">The DeWalt name had been included in the awareness research described in </span><span class="cls_013">Table B</span><span class="cls_006"> above.</span></div>
+<div style="position:absolute;left:72.04px;top:600.60px" class="cls_006"><span class="cls_006">It received a 70% awareness rating, and most of those who knew DeWalt were positively disposed to</span></div>
+<div style="position:absolute;left:72.04px;top:612.60px" class="cls_006"><span class="cls_006">it.  Surprisingly, it had achieved an “Is One of the Best” agreement percent of 63% from tradesmen as</span></div>
+<div style="position:absolute;left:72.04px;top:624.72px" class="cls_006"><span class="cls_006">compared to B&D’s 44% (</span><span class="cls_013">Table C</span><span class="cls_006">).  Further research on the DeWalt brand showed that 51% of</span></div>
+<div style="position:absolute;left:72.04px;top:636.72px" class="cls_006"><span class="cls_006">tradespeople would have some “purchase interest.”  The “level of endorsement” by B&D impacted</span></div>
+<div style="position:absolute;left:72.04px;top:648.72px" class="cls_006"><span class="cls_006">the “purchase interest” score.  Specifically:</span></div>
+<div style="position:absolute;left:72.04px;top:738.92px" class="cls_018"><span class="cls_018">10</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:7218px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background11.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.04px;top:36.12px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:510.69px;top:36.12px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:96.04px;top:76.76px" class="cls_018"><span class="cls_018">Identified As</span></div>
+<div style="position:absolute;left:413.73px;top:76.76px" class="cls_018"><span class="cls_018">% Purchase Interest</span></div>
+<div style="position:absolute;left:96.04px;top:99.60px" class="cls_024"><span class="cls_024">•</span><span class="cls_023">    DeWalt</span></div>
+<div style="position:absolute;left:447.88px;top:99.60px" class="cls_023"><span class="cls_023">51%</span></div>
+<div style="position:absolute;left:96.04px;top:110.64px" class="cls_024"><span class="cls_024">•</span><span class="cls_023">    DeWalt-Serviced and Distributed by Black & Decker</span></div>
+<div style="position:absolute;left:447.86px;top:110.64px" class="cls_023"><span class="cls_023">58%</span></div>
+<div style="position:absolute;left:96.04px;top:121.68px" class="cls_024"><span class="cls_024">•</span><span class="cls_023">    DeWalt-Manufactured, Serviced and Distributed by Black & Decker</span></div>
+<div style="position:absolute;left:447.88px;top:121.68px" class="cls_023"><span class="cls_023">53%</span></div>
+<div style="position:absolute;left:126.04px;top:155.76px" class="cls_006"><span class="cls_006">Galli felt that any plan involving investing to build market share—Option 2 or Option 3—</span></div>
+<div style="position:absolute;left:90.04px;top:167.76px" class="cls_006"><span class="cls_006">would have to provide for a minimal objective of doubling B&D’s Professional-Tradesmen segment</span></div>
+<div style="position:absolute;left:90.04px;top:179.76px" class="cls_006"><span class="cls_006">share from under 10% to nearly 20% within three years, with major share “take-away” from Makita.</span></div>
+<div style="position:absolute;left:90.04px;top:191.76px" class="cls_006"><span class="cls_006">Operating income would be expected to improve steadily from under 10% to at least 12%.  He also</span></div>
+<div style="position:absolute;left:90.04px;top:203.76px" class="cls_006"><span class="cls_006">knew that the Membership Clubs, which represented about 10% of segment sales for the industry</span></div>
+<div style="position:absolute;left:90.04px;top:215.76px" class="cls_006"><span class="cls_006">were and would continue to be off-limits.  Thus, he would not be able to attack the 85% share Makita</span></div>
+<div style="position:absolute;left:90.04px;top:227.76px" class="cls_006"><span class="cls_006">held within that channel.</span></div>
+<div style="position:absolute;left:126.04px;top:251.76px" class="cls_006"><span class="cls_006">He wondered what type of reaction to expect from Makita if he pursued a “build share”</span></div>
+<div style="position:absolute;left:90.04px;top:263.76px" class="cls_006"><span class="cls_006">option.  Finally, he considered the risk.  On the one hand, B&D was not making much money in the</span></div>
+<div style="position:absolute;left:90.04px;top:275.76px" class="cls_006"><span class="cls_006">Professional-Tradesmen segment anyway, so financial risk was limited.  On the other hand, there</span></div>
+<div style="position:absolute;left:90.04px;top:287.76px" class="cls_006"><span class="cls_006">might be implications for the other two segments and embarrassment in the retail channels.</span></div>
+<div style="position:absolute;left:126.04px;top:311.76px" class="cls_006"><span class="cls_006">One of the color options he was considering was a bold “Industrial Yellow”—a familiar job</span></div>
+<div style="position:absolute;left:90.04px;top:323.76px" class="cls_006"><span class="cls_006">site color associated with safety, but not yet used by any power tool brand.  But, if the strategy was</span></div>
+<div style="position:absolute;left:90.04px;top:335.76px" class="cls_006"><span class="cls_006">not success, Galli could not think of anything good that could come from his product being the same</span></div>
+<div style="position:absolute;left:90.04px;top:347.76px" class="cls_006"><span class="cls_006">color as a lemon.</span></div>
+<div style="position:absolute;left:529.96px;top:738.92px" class="cls_018"><span class="cls_018">11</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8020px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background12.jpg" width=612 height=792></div>
+<div style="position:absolute;left:72.04px;top:36.12px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:299.26px;top:36.12px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:72.04px;top:69.48px" class="cls_013"><span class="cls_013">Exhibit 1</span></div>
+<div style="position:absolute;left:125.08px;top:69.48px" class="cls_006"><span class="cls_006">Market Shares of Professional-Tradesmen Tools by Product Type—1990</span></div>
+<div style="position:absolute;left:370.72px;top:100.88px" class="cls_018"><span class="cls_018">Approximate Shares</span></div>
+<div style="position:absolute;left:254.80px;top:112.64px" class="cls_018"><span class="cls_018">Approximate</span></div>
+<div style="position:absolute;left:80.32px;top:123.68px" class="cls_018"><span class="cls_018">Product</span></div>
+<div style="position:absolute;left:257.08px;top:123.68px" class="cls_018"><span class="cls_018">% of Market</span></div>
+<div style="position:absolute;left:338.20px;top:123.68px" class="cls_018"><span class="cls_018">Makita</span></div>
+<div style="position:absolute;left:392.09px;top:123.68px" class="cls_018"><span class="cls_018">Milwaukee</span></div>
+<div style="position:absolute;left:467.20px;top:123.68px" class="cls_018"><span class="cls_018">B&D</span></div>
+<div style="position:absolute;left:80.32px;top:146.48px" class="cls_024"><span class="cls_024">•</span><span class="cls_023"> </span><span class="cls_018">   Drills</span><span class="cls_023"> (30%)</span></div>
+<div style="position:absolute;left:98.56px;top:157.56px" class="cls_023"><span class="cls_023">- Cordless Drivers</span></div>
+<div style="position:absolute;left:273.40px;top:157.56px" class="cls_023"><span class="cls_023">16%</span></div>
+<div style="position:absolute;left:343.12px;top:157.56px" class="cls_023"><span class="cls_023">80%</span></div>
+<div style="position:absolute;left:405.40px;top:157.56px" class="cls_023"><span class="cls_023">&lt;5%</span></div>
+<div style="position:absolute;left:465.16px;top:157.56px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:98.56px;top:168.60px" class="cls_023"><span class="cls_023">- Corded</span></div>
+<div style="position:absolute;left:273.40px;top:168.60px" class="cls_023"><span class="cls_023">13%</span></div>
+<div style="position:absolute;left:343.12px;top:168.60px" class="cls_023"><span class="cls_023">50%</span></div>
+<div style="position:absolute;left:405.52px;top:168.60px" class="cls_023"><span class="cls_023">20%</span></div>
+<div style="position:absolute;left:467.80px;top:168.60px" class="cls_023"><span class="cls_023">25%</span></div>
+<div style="position:absolute;left:80.32px;top:190.64px" class="cls_024"><span class="cls_024">•</span><span class="cls_023"> </span><span class="cls_018">   Saws</span><span class="cls_023"> (35%)</span></div>
+<div style="position:absolute;left:98.56px;top:198.72px" class="cls_023"><span class="cls_023">- Circulara</span></div>
+<div style="position:absolute;left:273.40px;top:201.72px" class="cls_023"><span class="cls_023">14%</span></div>
+<div style="position:absolute;left:343.12px;top:201.72px" class="cls_023"><span class="cls_023">55%</span></div>
+<div style="position:absolute;left:405.52px;top:201.72px" class="cls_023"><span class="cls_023">15%</span></div>
+<div style="position:absolute;left:465.16px;top:201.73px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:98.56px;top:212.76px" class="cls_023"><span class="cls_023">- Miter</span></div>
+<div style="position:absolute;left:273.40px;top:212.76px" class="cls_023"><span class="cls_023">11%</span></div>
+<div style="position:absolute;left:343.12px;top:212.76px" class="cls_023"><span class="cls_023">45%</span></div>
+<div style="position:absolute;left:413.08px;top:212.76px" class="cls_023"><span class="cls_023">-</span></div>
+<div style="position:absolute;left:467.80px;top:212.77px" class="cls_023"><span class="cls_023">15%</span></div>
+<div style="position:absolute;left:98.56px;top:223.80px" class="cls_023"><span class="cls_023">- Reciprocating</span></div>
+<div style="position:absolute;left:270.76px;top:223.80px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:343.12px;top:223.80px" class="cls_023"><span class="cls_023">30%</span></div>
+<div style="position:absolute;left:405.52px;top:223.80px" class="cls_023"><span class="cls_023">30%</span></div>
+<div style="position:absolute;left:467.80px;top:223.81px" class="cls_023"><span class="cls_023">25%</span></div>
+<div style="position:absolute;left:98.56px;top:234.84px" class="cls_023"><span class="cls_023">- Jig</span></div>
+<div style="position:absolute;left:273.28px;top:234.84px" class="cls_023"><span class="cls_023">&lt;5%</span></div>
+<div style="position:absolute;left:343.12px;top:234.84px" class="cls_023"><span class="cls_023">25%</span></div>
+<div style="position:absolute;left:405.52px;top:234.85px" class="cls_023"><span class="cls_023">15%</span></div>
+<div style="position:absolute;left:465.16px;top:234.85px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:98.56px;top:245.88px" class="cls_023"><span class="cls_023">- Chop</span></div>
+<div style="position:absolute;left:273.28px;top:245.88px" class="cls_023"><span class="cls_023">&lt;5%</span></div>
+<div style="position:absolute;left:343.12px;top:245.88px" class="cls_023"><span class="cls_023">50%</span></div>
+<div style="position:absolute;left:405.40px;top:245.89px" class="cls_023"><span class="cls_023">&lt;5%</span></div>
+<div style="position:absolute;left:467.80px;top:245.89px" class="cls_023"><span class="cls_023">20%</span></div>
+<div style="position:absolute;left:80.32px;top:267.92px" class="cls_024"><span class="cls_024">•</span><span class="cls_023"> </span><span class="cls_018">   Sanders</span><span class="cls_023"> (>15%)</span></div>
+<div style="position:absolute;left:98.56px;top:279.01px" class="cls_023"><span class="cls_023">- Finishing</span></div>
+<div style="position:absolute;left:270.76px;top:279.01px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:343.12px;top:279.01px" class="cls_023"><span class="cls_023">60%</span></div>
+<div style="position:absolute;left:405.40px;top:279.01px" class="cls_023"><span class="cls_023">&lt;5%</span></div>
+<div style="position:absolute;left:465.16px;top:279.01px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:98.56px;top:287.05px" class="cls_023"><span class="cls_023">- Beltb</span></div>
+<div style="position:absolute;left:273.28px;top:290.05px" class="cls_023"><span class="cls_023">&lt;5%</span></div>
+<div style="position:absolute;left:343.12px;top:290.05px" class="cls_023"><span class="cls_023">20%</span></div>
+<div style="position:absolute;left:413.08px;top:290.05px" class="cls_023"><span class="cls_023">-</span></div>
+<div style="position:absolute;left:475.36px;top:290.05px" class="cls_023"><span class="cls_023">-</span></div>
+<div style="position:absolute;left:72.04px;top:323.78px" class="cls_025"><span class="cls_025"><sup>a</sup></span><span class="cls_026">Skil held approximately 20% of Circular Saws.</span></div>
+<div style="position:absolute;left:72.04px;top:336.86px" class="cls_025"><span class="cls_025"><sup>b</sup></span><span class="cls_026">Ryobi held approximately 45% of Belt Sanders.</span></div>
+<div style="position:absolute;left:72.04px;top:397.44px" class="cls_013"><span class="cls_013">Exhibit 2</span></div>
+<div style="position:absolute;left:125.08px;top:397.44px" class="cls_006"><span class="cls_006">Market Shares of Professional-Tradesmen by Channel Type—1990</span></div>
+<div style="position:absolute;left:391.12px;top:428.84px" class="cls_018"><span class="cls_018">Approximate Shares Within</span></div>
+<div style="position:absolute;left:420.40px;top:439.88px" class="cls_018"><span class="cls_018">Channel Type</span></div>
+<div style="position:absolute;left:230.20px;top:451.64px" class="cls_018"><span class="cls_018">Approximate % of Professional</span></div>
+<div style="position:absolute;left:401.56px;top:451.64px" class="cls_018"><span class="cls_018">Makita</span></div>
+<div style="position:absolute;left:477.76px;top:451.64px" class="cls_018"><span class="cls_018">B&D</span></div>
+<div style="position:absolute;left:229.84px;top:462.68px" class="cls_018"><span class="cls_018">Segment Sales in This Channel</span></div>
+<div style="position:absolute;left:403.12px;top:462.68px" class="cls_018"><span class="cls_018">Share</span></div>
+<div style="position:absolute;left:475.00px;top:462.68px" class="cls_018"><span class="cls_018">Share</span></div>
+<div style="position:absolute;left:76.48px;top:485.52px" class="cls_023"><span class="cls_023">Two-Step</span></div>
+<div style="position:absolute;left:291.58px;top:485.52px" class="cls_023"><span class="cls_023">40%</span></div>
+<div style="position:absolute;left:408.57px;top:485.52px" class="cls_023"><span class="cls_023">55%</span></div>
+<div style="position:absolute;left:476.11px;top:485.52px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:76.48px;top:496.56px" class="cls_023"><span class="cls_023">Home Centers</span></div>
+<div style="position:absolute;left:291.54px;top:496.56px" class="cls_023"><span class="cls_023">25%</span></div>
+<div style="position:absolute;left:408.53px;top:496.56px" class="cls_023"><span class="cls_023">45%</span></div>
+<div style="position:absolute;left:476.08px;top:496.56px" class="cls_023"><span class="cls_023">&lt;10%</span></div>
+<div style="position:absolute;left:76.48px;top:507.60px" class="cls_023"><span class="cls_023">Warehouse Home Centers</span></div>
+<div style="position:absolute;left:291.54px;top:507.60px" class="cls_023"><span class="cls_023">15%</span></div>
+<div style="position:absolute;left:408.54px;top:507.60px" class="cls_023"><span class="cls_023">45%</span></div>
+<div style="position:absolute;left:481.37px;top:507.60px" class="cls_023"><span class="cls_023">20%</span></div>
+<div style="position:absolute;left:76.48px;top:518.64px" class="cls_023"><span class="cls_023">Membership Clubs</span></div>
+<div style="position:absolute;left:291.52px;top:518.64px" class="cls_023"><span class="cls_023">10%</span></div>
+<div style="position:absolute;left:408.51px;top:518.64px" class="cls_023"><span class="cls_023">85%</span></div>
+<div style="position:absolute;left:486.39px;top:518.64px" class="cls_023"><span class="cls_023">0%</span></div>
+<div style="position:absolute;left:76.48px;top:529.68px" class="cls_023"><span class="cls_023">Farm Outlets</span></div>
+<div style="position:absolute;left:296.59px;top:529.68px" class="cls_023"><span class="cls_023">5%</span></div>
+<div style="position:absolute;left:408.54px;top:529.68px" class="cls_023"><span class="cls_023">45%</span></div>
+<div style="position:absolute;left:481.37px;top:529.68px" class="cls_023"><span class="cls_023">15%</span></div>
+<div style="position:absolute;left:72.04px;top:738.92px" class="cls_018"><span class="cls_018">12</span></div>
+</div>
+<div style="position:absolute;left:50%;margin-left:-306px;top:8822px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+<img src="61d064f4-4f6f-11eb-8b25-0cc47a792c0a_id_61d064f4-4f6f-11eb-8b25-0cc47a792c0a_files/background13.jpg" width=612 height=792></div>
+<div style="position:absolute;left:90.04px;top:36.12px" class="cls_011"><span class="cls_011">The Black & Decker Corporation (A): Power Tools Division</span></div>
+<div style="position:absolute;left:510.69px;top:36.12px" class="cls_011"><span class="cls_011">595-057</span></div>
+<div style="position:absolute;left:90.04px;top:69.48px" class="cls_013"><span class="cls_013">Exhibit 3</span></div>
+<div style="position:absolute;left:143.08px;top:69.48px" class="cls_006"><span class="cls_006">Piranha Sub-Brand</span></div>
+<div style="position:absolute;left:529.96px;top:738.92px" class="cls_018"><span class="cls_018">13</span></div>
+</div>
+
+</body>
+</html>
